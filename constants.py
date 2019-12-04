@@ -1,6 +1,13 @@
 # constants
-WIDTH = 1700
-HEIGHT = 1000
+import pygame
+
+def getDisplayInfo():
+	pygame.init()
+	displayInfoObject = pygame.display.Info()
+	return displayInfoObject.current_w,displayInfoObject.current_h
+
+WIDTH,HEIGHT = getDisplayInfo()
+
 FPS = 60
 GRAVITY = 0.15
 PI = 3.142
