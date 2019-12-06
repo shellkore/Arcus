@@ -2,6 +2,11 @@
 # Frozen Jam by tgfcoder <https://twitter.com/tgfcoder> licensed under CC-BY-3 <http://creativecommons.org/licenses/by/3.0/>
 
 import pygame
+import constants
+pygame.init()
+displayInfoObject = pygame.display.Info()
+constants.WIDTH = displayInfoObject.current_w - 20
+constants.HEIGHT = displayInfoObject.current_h - 20
 from game import *
 
 
